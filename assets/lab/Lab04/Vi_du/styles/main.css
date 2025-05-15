@@ -185,7 +185,7 @@ body {
     color: #847676;
     font-weight: bold;
     padding-left: 50px;
-    background: url(./images/layout/bar_bg.gif) no-repeat center;
+    background: url(../images/layout/bar_bg.gif) no-repeat center;
 }
 
 .center_content {
@@ -201,16 +201,17 @@ body {
 
 .pro_box_top {
     height: 12px;
-    background-image: url(./images/layout/product_box_top.gif);
+    /* background-image: url(./images/layout/product_box_top.gif); */
+    background-image: url(../images/layout/details_box_top.gif);
 }
 
 .pro_box_bot {
     height: 10px;
-    background-image: url(./images/layout/product_box_bottom.gif);
+    background-image: url(../images/layout/product_box_bottom.gif);
 }
 
 .pro_box_mid {
-    background-image: url(./images/layout/product_box_center.gif);
+    background-image: url(../images/layout/product_box_center.gif);
 }
 
 .pro_title {
