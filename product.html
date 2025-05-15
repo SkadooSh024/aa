@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Lord</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.css">
+    
+    <!-- Javascript -->
+    <script type="module" src="./assets/js/data.js" defer></script>
+    <script type="module" src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/scroll.js"></script>
+</head>
+<body>
+    <div id="main">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="row no-gutters header__navbar">
+                    <div class="col l-4 m-12 c-12">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./assets/images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="header__navbar-search-box">
+                            <input type="text" name="search" id="search-input" placeholder="Bạn đang tìm sản phẩm...">
+                            <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <ul class="login">
+                            <li>
+                                <a href="">Đăng nhập</a>
+                                <i class="fa-solid fa-user login-icon"></i>
+                            </li>
+                            
+                            <li>
+                                <a href="">Giỏ hàng</a>
+                                <i class="fa-solid fa-cart-shopping login-icon"></i>
+                            </li>
+
+                            <label for="nav-input" class="header__navbar-second-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+
+                            <input type="checkbox" hidden name="header__navbar-second-input" id="nav-input">
+
+                            <label for="nav-input" class="nav__overlay"></label>
+
+                            <div class="header__navbar-second--responsive">
+                                <label for="nav-input" class="header__navbar-second-close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </label>
+                                <ul>
+                                    <li><a href="./index.html">Trang chủ</a></li>
+                                    <li><a href="#" class="active">Sản phẩm</a></li>
+                                    <nav class="category-mobile">
+                                        <h3 class="category__heading-mobile">Danh mục</h3>
+                        
+                                        <ul class="category-list-mobile">
+                                            <li>
+                                                <a href="#">Băng quấn</a>
+                                            </li>
+                                            <li>
+                                                <a href="#8">Găng tay</a>
+                                            </li>
+                                            <li>
+                                                <a href="#16">Thảm yoga</a>
+                                            </li>
+                                            <li>
+                                                <a href="#24">Dây kháng lực</a>
+                                            </li>
+                                            <li>
+                                                <a href="#32">Đai lưng</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <li><a href="./contact.html">Liên hệ</a></li>
+                                    <li><a href="./about.html">Về chúng tôi</a></li>
+                                    <li><a href="./lab.html">LAB</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="row no-gutters">
+                    <div class="col l-12 m-12 c-12">
+                        <ul class="header__navbar-second">
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="#" class="active">Sản phẩm</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
+                            <li><a href="./about.html">Về chúng tôi</a></li>
+                            <li><a href="./lab.html">LAB</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+            
+            
+        <div class="content_container">
+            <div class="grid wide">
+                <div class="row no-gutters content_container--pt">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+            
+                            <ul class="category-list">
+                                <li>
+                                    <a href="#">Băng quấn</a>
+                                </li>
+                                <li>
+                                    <a href="#8">Găng tay</a>
+                                </li>
+                                <li>
+                                    <a href="#16">Thảm yoga</a>
+                                </li>
+                                <li>
+                                    <a href="#24">Dây kháng lực</a>
+                                </li>
+                                <li>
+                                    <a href="#32">Đai lưng</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="btn">Phổ biến</button>
+                            <button class="btn btn--primary">Mới nhất</button>
+                            <button class="btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="fa-solid fa-caret-down select-input__icon"></i>
+                                <ul class="select-input__list">
+                                    <li>
+                                        <a href="#">Thấp đến cao</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/9
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="">
+                                        <i class="home-filter__page-icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <div class="row no-gutters list_product">
+                                
+                            </div>
+
+                            <div class="row no-gutters">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="home-payment__heading">
+                                        <h1>Phương thức thanh toán</h1>
+                                        <img src="./assets/images/payment.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__heading">Giới thiệu</div>
+                        <h4 class="introduce-content">GYM LORD - đồ án cuối kì 'webisite bán dụng cụ gym' môn học thực hành nhập môn web và ứng dụng.</h4>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__heading">Chăm sóc khách hàng</div>
+                        <ul class="footer-list">
+                            <li><a href="">Trung tâm hỗ trợ</a></li>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Hướng dẫn thanh toán</a></li>
+                            <li><a href="">Góp ý, khiếu nại</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__heading">Theo dõi chúng tôi</div>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://www.facebook.com/phat.huynhnguyentann">
+                                <i class="footer-icon fa-brands fa-facebook"></i>
+                                Facebook
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/tphat2904/">
+                                <i class="footer-icon fa-brands fa-instagram"></i>
+                                Instagram
+                            </a></li>
+                            <li><a href="https://www.youtube.com/">
+                                <i class="footer-icon fa-brands fa-youtube"></i>
+                                Youtube
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__heading">Nhập email giúp chúng tôi liên hệ với bạn</div>
+                        <div class="footer__email">
+                            <input type="email" name="search" id="footer-email__input" required placeholder="Nhập email của bạn...">
+                            <button type="submit" class="footer-email__btn">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="footer-bottom">
+                        <h3 class="footer-bottom__content">
+                            Họ và tên: Huỳnh Nguyễn Tấn Phát|<br>MSSV: DH52201181 | Lớp: D22_TH02 | Nhóm 4 Thứ 2 Ca 1
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

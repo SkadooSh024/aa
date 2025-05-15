@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Lord</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Font Roboto -->
+    
+    <!-- Icon -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.css">
+
+    <!-- Javascript -->
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="row no-gutters header__navbar">
+                    <div class="col l-4 m-12 c-12">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./assets/images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="header__navbar-search-box">
+                            <input type="text" name="search" id="search-input" placeholder="Bạn đang tìm sản phẩm...">
+                            <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <ul class="login">
+                            <li>
+                                <a href="">Đăng nhập</a>
+                                <i class="fa-solid fa-user login-icon"></i>
+                            </li>
+                            
+                            <li>
+                                <a href="">Giỏ hàng</a>
+                                <i class="fa-solid fa-cart-shopping login-icon"></i>
+                            </li>
+
+                            <label for="nav-input" class="header__navbar-second-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+
+                            <input type="checkbox" hidden name="header__navbar-second-input" id="nav-input">
+
+                            <label for="nav-input" class="nav__overlay"></label>
+
+                            <div class="header__navbar-second--responsive">
+                                <label for="nav-input" class="header__navbar-second-close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </label>
+                                <ul>
+                                    <li><a href="./index.html">Trang chủ</a></li>
+                                    <li><a href="./product.html">Sản phẩm</a></li>
+                                    <li><a href="./contact.html">Liên hệ</a></li>
+                                    <li><a href="#" class="active">Về chúng tôi</a></li>
+                                    <li><a href="./lab.html">LAB</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="row no-gutters">
+                    <div class="col l-12 m-12 c-12">
+                        <ul class="header__navbar-second">
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./product.html">Sản phẩm</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
+                            <li><a href="#" class="active">Về chúng tôi</a></li>
+                            <li><a href="./lab.html">LAB</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+            
+            
+        <div class="content_container">
+            <div class="grid wide">
+                <div class="row no-gutters about-container">
+                    
+                    <div class="col l-8 m-6 c-12">
+                        <div class="about-heading">
+                            <h1>Ý tưởng và triển khai</h1>
+                        </div>
+                        <div class="about-content-first">
+                            <p class="about-content-first__paragraph">GYM LORD là web site bán dụng cụ hỗ trợ tập luyện, phục vụ đồ án môn học Thực hành nhập môn web và ứng dụng trường Đại học Công nghệ Sài Gòn (STU).</p>
+                            <p class="about-content-first__paragraph">Nhu cầu tập luyện cải thiện hình thể và sức khỏe là vấn đề rất được quan tâm từ cả những người lớn tuổi lẫn người trẻ. Cùng với
+                                nhu cầu tập luyện thì nhu cầu mua các trang thiết bị hỗ trợ tập luyện gym/ yoga, ... để hỗ trợ cũng như đảm bảo an toàn
+                                tập luyện cũng tăng cao. Nắm được xu hướng và riêng bản thân em cũng có đam mê với bộ môn gym nên quyết định chọn đề tài này để thực hiện đồ án môn Thực hành nhập môn web và ứng dụng.
+                            </p>
+                        </div>
+
+                        <div class="about-heading">
+                            <h1>Các chứa năng đã thực hiện</h1>
+                        </div>
+                        <div class="about-content-second">
+                            <p>- Responsive thích ứng với PC, laptop, tablet và mobile.</p>
+                            <p>- Navbar responsive chuyển thành Humberger khi chuyển sang tablet và mobile.</p>
+                            <p>- Sử dụng JavaScript thực hiện banner tự động.</p>
+                            <p>- Chức năng hiển thị chi tiết sản phẩm sử dụng JavaScript truyền dữ liệu vào trang sản phẩm vào trang chi tiết sản phẩm.</p>
+                            <p>- Chức năng điều hướng sản phẩm bằng category.</p>
+                            <p>- Chức năng kiểm tra dữ liệu các trường của form Liên hệ.</p>
+                            <p>- Hiệu ứng hover, transition.</p>
+                            <p>- Chức năng tăng giảm số lượng sản phẩm.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="about-img">
+                             <div class="about-banner" style="background-image: url(./assets/images/banner_left.png);"></div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__heading">Giới thiệu</div>
+                        <h4 class="introduce-content">GYM LORD - đồ án cuối kì 'webisite bán dụng cụ gym' môn học thực hành nhập môn web và ứng dụng.</h4>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__heading">Chăm sóc khách hàng</div>
+                        <ul class="footer-list">
+                            <li><a href="">Trung tâm hỗ trợ</a></li>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Hướng dẫn thanh toán</a></li>
+                            <li><a href="">Góp ý, khiếu nại</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__heading">Theo dõi chúng tôi</div>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://www.facebook.com/phat.huynhnguyentann">
+                                <i class="footer-icon fa-brands fa-facebook"></i>
+                                Facebook
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/tphat2904/">
+                                <i class="footer-icon fa-brands fa-instagram"></i>
+                                Instagram
+                            </a></li>
+                            <li><a href="https://www.youtube.com/">
+                                <i class="footer-icon fa-brands fa-youtube"></i>
+                                Youtube
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__heading">Nhập email giúp chúng tôi liên hệ với bạn</div>
+                        <div class="footer__email">
+                            <input type="email" name="search" id="footer-email__input" required placeholder="Nhập email của bạn...">
+                            <button type="submit" class="footer-email__btn">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters">
+                    <div class="footer-bottom">
+                        <h3 class="footer-bottom__content">
+                            Họ và tên: Huỳnh Nguyễn Tấn Phát|<br>MSSV: DH52201181 | Lớp: D22_TH02 | Nhóm 4 Thứ 2 Ca 1
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
