@@ -1,4 +1,4 @@
-//Validate form contact
+// Kiểm tra đầu vào hợp lệ của form
 const form_contact = document.querySelector('.frm-contact');
 const input_name = document.getElementById('name');
 const input_phone = document.getElementById('phone');
@@ -72,9 +72,8 @@ input_message.addEventListener('change', function () {
 });
 
 form_contact.addEventListener('submit', function (e) {
-    e.preventDefault(); // Ngăn form gửi đi nếu có lỗi
+    e.preventDefault(); 
 
-    // Gọi validate trên từng field (nếu bạn muốn trigger lại lỗi từ setCustomValidity)
     input_name.dispatchEvent(new Event('change'));
     input_phone.dispatchEvent(new Event('change'));
     input_email.dispatchEvent(new Event('change'));
@@ -83,7 +82,7 @@ form_contact.addEventListener('submit', function (e) {
 
     if (form_contact.checkValidity()) {
         alert('Gửi thành công');
-        form_contact.reset(); // reset form thay vì clear từng input
+        form_contact.reset(); 
     } else {
         form_contact.reportValidity();
     }

@@ -42,12 +42,14 @@ if (product) {
   productDetail.innerHTML = `<p>Product not found</p>`;
 }
 
-// Tăng giảm số lượng sản phẩm
+
+
+
+// Tăng giảm số lượng sản phẩm trong trang chi tiết sản phẩm
 const decrease = document.querySelector('.decrease-btn');
 const increase = document.querySelector('.increase-btn');
 const quantityInput = document.querySelector('.quantity'); 
 
-// Sự kiện giảm số lượng
 decrease.addEventListener('click', function () {
     let currentQuantity = parseInt(quantityInput.value, 10);
     if (currentQuantity > 1) {
@@ -55,7 +57,6 @@ decrease.addEventListener('click', function () {
     }
 });
 
-// Sự kiện tăng số lượng
 increase.addEventListener('click', function () {
     let currentQuantity = parseInt(quantityInput.value, 10); 
     quantityInput.value = currentQuantity + 1; 
